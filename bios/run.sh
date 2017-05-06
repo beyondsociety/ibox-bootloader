@@ -1,5 +1,4 @@
 # Floppy Image
-
 echo -n "Assembling FAT Bootloader..." 
 nasm bootf.asm && echo " [Done]"
 
