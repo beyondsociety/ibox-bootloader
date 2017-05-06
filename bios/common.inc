@@ -1,4 +1,4 @@
-; 16-bit function to prints a string to the screen using the BIOS, input: si - Address of start of string to print.
+; 16-bit function to print a string to the screen using the BIOS, input: si - Address of start of string to print.
 print_string:
         pushad                          ; Push all general purpose registers to save them
 
@@ -15,7 +15,8 @@ print_loop:
 print_done:
         popad                           ; Pop all general purpose registers to restore them
         ret                             ; Return control
-   
+
+; Clears the screen (white text on blue background)
 clear_screen:
         pushad                          ; Push all general purpose registers to save them
 
